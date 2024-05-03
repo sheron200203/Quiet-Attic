@@ -34,8 +34,6 @@
             pictureBox2 = new PictureBox();
             textBox2 = new TextBox();
             dataGridView1 = new DataGridView();
-            pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
             addBtn = new Button();
             panel1 = new Panel();
             label1 = new Label();
@@ -46,7 +44,6 @@
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -57,8 +54,6 @@
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(textBox2);
             panel2.Controls.Add(dataGridView1);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(textBox1);
             panel2.Controls.Add(addBtn);
             panel2.Location = new Point(30, 137);
             panel2.Name = "panel2";
@@ -111,29 +106,6 @@
             dataGridView1.ShowEditingIcon = false;
             dataGridView1.Size = new Size(674, 177);
             dataGridView1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox1.BackColor = SystemColors.Control;
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Image = Properties.Resources.images;
-            pictureBox1.Location = new Point(1149, 33);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(42, 27);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(932, 33);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(223, 27);
-            textBox1.TabIndex = 1;
             // 
             // addBtn
             // 
@@ -224,7 +196,6 @@
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -234,8 +205,6 @@
 
         private Panel panel2;
         private DataGridView dataGridView1;
-        private PictureBox pictureBox1;
-        private TextBox textBox1;
         private Button addBtn;
         private Panel panel1;
         private Label label1;
