@@ -52,5 +52,11 @@ namespace QuietAttic
             PropertyType form = new PropertyType();
             form.ShowDialog();
         }
+
+        private void productionBtn_Click(object sender, EventArgs e)
+        {
+            Production form = new Production();
+            form.ShowDialog();
+        }
     }
 }

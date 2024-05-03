@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             panel2 = new Panel();
-            pictureBox2 = new PictureBox();
-            textBox2 = new TextBox();
             dataGridView1 = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
@@ -41,12 +39,14 @@
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewButtonColumn();
             Column6 = new DataGridViewButtonColumn();
+            pictureBox2 = new PictureBox();
+            textBox2 = new TextBox();
             addBtn = new Button();
             panel1 = new Panel();
             label1 = new Label();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -59,27 +59,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(688, 245);
             panel2.TabIndex = 1;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = SystemColors.Control;
-            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox2.Image = Properties.Resources.images;
-            pictureBox2.Location = new Point(631, 139);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(42, 27);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 4;
-            pictureBox2.TabStop = false;
-            // 
-            // textBox2
-            // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(409, 139);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(223, 27);
-            textBox2.TabIndex = 3;
             // 
             // dataGridView1
             // 
@@ -94,7 +73,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
             dataGridView1.GridColor = Color.White;
-            dataGridView1.Location = new Point(15, 67);
+            dataGridView1.Location = new Point(27, 29);
             dataGridView1.MultiSelect = false;
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
@@ -107,8 +86,8 @@
             // 
             // Column1
             // 
-            dataGridViewCellStyle4.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Column1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Column1.DefaultCellStyle = dataGridViewCellStyle1;
             Column1.HeaderText = "ID";
             Column1.MinimumWidth = 6;
             Column1.Name = "Column1";
@@ -137,11 +116,11 @@
             // 
             // Column5
             // 
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(255, 128, 128);
-            dataGridViewCellStyle5.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(255, 128, 128);
-            Column5.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(255, 128, 128);
+            dataGridViewCellStyle2.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(255, 128, 128);
+            Column5.DefaultCellStyle = dataGridViewCellStyle2;
             Column5.FlatStyle = FlatStyle.Flat;
             Column5.HeaderText = "";
             Column5.MinimumWidth = 6;
@@ -152,11 +131,11 @@
             // 
             // Column6
             // 
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(192, 255, 255);
-            dataGridViewCellStyle6.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(192, 255, 255);
-            Column6.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(192, 255, 255);
+            dataGridViewCellStyle3.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(192, 255, 255);
+            Column6.DefaultCellStyle = dataGridViewCellStyle3;
             Column6.FlatStyle = FlatStyle.Flat;
             Column6.HeaderText = "";
             Column6.MinimumWidth = 6;
@@ -165,11 +144,34 @@
             Column6.Text = "Delete";
             Column6.UseColumnTextForButtonValue = true;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox2.BackColor = SystemColors.Control;
+            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox2.Image = Properties.Resources.images;
+            pictureBox2.Location = new Point(702, 139);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(42, 27);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
+            // 
+            // textBox2
+            // 
+            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(480, 139);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(223, 27);
+            textBox2.TabIndex = 3;
+            // 
             // addBtn
             // 
             addBtn.BackColor = Color.LightSteelBlue;
             addBtn.Font = new Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addBtn.Location = new Point(55, 120);
+            addBtn.Location = new Point(55, 128);
             addBtn.Name = "addBtn";
             addBtn.Size = new Size(105, 46);
             addBtn.TabIndex = 0;
@@ -191,7 +193,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(299, 55);
+            label1.Location = new Point(326, 50);
             label1.Name = "label1";
             label1.Size = new Size(113, 26);
             label1.TabIndex = 0;
@@ -210,9 +212,8 @@
             Name = "Location";
             Text = "Location";
             panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

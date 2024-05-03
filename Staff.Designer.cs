@@ -34,17 +34,19 @@
             label1 = new Label();
             panel2 = new Panel();
             dataGridView1 = new DataGridView();
-            addBtn = new Button();
-        
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewButtonColumn();
             Column6 = new DataGridViewButtonColumn();
+            addBtn = new Button();
+            pictureBox4 = new PictureBox();
+            textBox4 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -71,6 +73,8 @@
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(pictureBox4);
+            panel2.Controls.Add(textBox4);
             panel2.Controls.Add(dataGridView1);
             panel2.Controls.Add(addBtn);
             panel2.Location = new Point(12, 136);
@@ -101,18 +105,6 @@
             dataGridView1.ShowEditingIcon = false;
             dataGridView1.Size = new Size(747, 158);
             dataGridView1.TabIndex = 0;
-            //
-            // addBtn
-            // 
-            addBtn.BackColor = Color.LightSteelBlue;
-            addBtn.Font = new Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addBtn.Location = new Point(15, 15);
-            addBtn.Name = "addBtn";
-            addBtn.Size = new Size(105, 46);
-            addBtn.TabIndex = 0;
-            addBtn.Text = "New";
-            addBtn.UseVisualStyleBackColor = false;
-            addBtn.Click += addBtn_Click;
             // 
             // Column1
             // 
@@ -172,6 +164,41 @@
             Column6.Text = "Delete";
             Column6.UseColumnTextForButtonValue = true;
             // 
+            // addBtn
+            // 
+            addBtn.BackColor = Color.LightSteelBlue;
+            addBtn.Font = new Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addBtn.Location = new Point(15, 15);
+            addBtn.Name = "addBtn";
+            addBtn.Size = new Size(105, 46);
+            addBtn.TabIndex = 0;
+            addBtn.Text = "New";
+            addBtn.UseVisualStyleBackColor = false;
+            addBtn.Click += addBtn_Click;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox4.BackColor = SystemColors.Control;
+            pictureBox4.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox4.Image = Properties.Resources.images;
+            pictureBox4.Location = new Point(720, 34);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(42, 27);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 11;
+            pictureBox4.TabStop = false;
+            // 
+            // textBox4
+            // 
+            textBox4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            textBox4.BorderStyle = BorderStyle.FixedSingle;
+            textBox4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox4.Location = new Point(503, 34);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(223, 27);
+            textBox4.TabIndex = 10;
+            // 
             // Staff
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -186,6 +213,7 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
 
@@ -201,5 +229,7 @@
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewButtonColumn Column5;
         private DataGridViewButtonColumn Column6;
+        private PictureBox pictureBox4;
+        private TextBox textBox4;
     }
 }

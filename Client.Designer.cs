@@ -71,7 +71,7 @@
             pictureBox2.BackColor = SystemColors.Control;
             pictureBox2.BorderStyle = BorderStyle.FixedSingle;
             pictureBox2.Image = Properties.Resources.images;
-            pictureBox2.Location = new Point(706, 26);
+            pictureBox2.Location = new Point(732, 26);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(42, 27);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -83,7 +83,7 @@
             textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(489, 26);
+            textBox2.Location = new Point(515, 26);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(223, 27);
             textBox2.TabIndex = 3;
@@ -191,7 +191,6 @@
             Column6.ReadOnly = true;
             Column6.Text = "Delete";
             Column6.UseColumnTextForButtonValue = true;
-            //
             // 
             // addBtn
             // 

@@ -171,7 +171,7 @@
             pictureBox1.BackColor = SystemColors.Control;
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Image = Properties.Resources.images;
-            pictureBox1.Location = new Point(614, 33);
+            pictureBox1.Location = new Point(632, 34);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(42, 27);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -184,7 +184,7 @@
             textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(397, 33);
+            textBox1.Location = new Point(415, 34);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(223, 27);
             textBox1.TabIndex = 1;
@@ -201,14 +201,14 @@
             addBtn.UseVisualStyleBackColor = false;
             addBtn.Click += button1_Click;
             // 
-            // Form1
+            // Production
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Name = "Form1";
+            Name = "Production";
             Text = "Production";
             Load += Form1_Load;
             panel1.ResumeLayout(false);

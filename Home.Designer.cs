@@ -57,6 +57,7 @@
             productionBtn.TabIndex = 1;
             productionBtn.Text = "PRODUCTION";
             productionBtn.UseVisualStyleBackColor = false;
+            productionBtn.Click += productionBtn_Click;
             // 
             // clientBtn
             // 
