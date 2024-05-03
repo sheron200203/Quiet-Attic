@@ -16,5 +16,11 @@ namespace QuietAttic
         {
             InitializeComponent();
         }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            AddProperty form = new AddProperty();
+            form.ShowDialog();
+        }
     }
 }

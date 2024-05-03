@@ -28,17 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             panel2 = new Panel();
-            dataGridView1 = new DataGridView();
-            pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
-            addBtn = new Button();
-            panel1 = new Panel();
-            label1 = new Label();
             pictureBox2 = new PictureBox();
             textBox2 = new TextBox();
+            dataGridView1 = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
@@ -48,11 +43,13 @@
             Column9 = new DataGridViewTextBoxColumn();
             Column5 = new DataGridViewButtonColumn();
             Column6 = new DataGridViewButtonColumn();
+            addBtn = new Button();
+            panel1 = new Panel();
+            label1 = new Label();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
@@ -62,13 +59,34 @@
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(textBox2);
             panel2.Controls.Add(dataGridView1);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(textBox1);
             panel2.Controls.Add(addBtn);
-            panel2.Location = new Point(55, 145);
+            panel2.Location = new Point(12, 145);
             panel2.Name = "panel2";
-            panel2.Size = new Size(688, 281);
+            panel2.Size = new Size(776, 281);
             panel2.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox2.BackColor = SystemColors.Control;
+            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox2.Image = Properties.Resources.images;
+            pictureBox2.Location = new Point(706, 26);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(42, 27);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
+            // 
+            // textBox2
+            // 
+            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(489, 26);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(223, 27);
+            textBox2.TabIndex = 3;
             // 
             // dataGridView1
             // 
@@ -91,87 +109,9 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridView1.ShowEditingIcon = false;
-            dataGridView1.Size = new Size(670, 152);
+            dataGridView1.Size = new Size(758, 152);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox1.BackColor = SystemColors.Control;
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Image = Properties.Resources.images;
-            pictureBox1.Location = new Point(1102, 33);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(42, 27);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(885, 33);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(223, 27);
-            textBox1.TabIndex = 1;
-            // 
-            // addBtn
-            // 
-            addBtn.BackColor = Color.LightSteelBlue;
-            addBtn.Font = new Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addBtn.Location = new Point(15, 15);
-            addBtn.Name = "addBtn";
-            addBtn.Size = new Size(105, 46);
-            addBtn.TabIndex = 0;
-            addBtn.Text = "New";
-            addBtn.UseVisualStyleBackColor = false;
-            addBtn.Click += addBtn_Click;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = SystemColors.ActiveCaption;
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(800, 105);
-            panel1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(358, 47);
-            label1.Name = "label1";
-            label1.Size = new Size(83, 26);
-            label1.TabIndex = 0;
-            label1.Text = "CLIENT";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox2.BackColor = SystemColors.Control;
-            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox2.Image = Properties.Resources.images;
-            pictureBox2.Location = new Point(618, 26);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(42, 27);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 4;
-            pictureBox2.TabStop = false;
-            // 
-            // textBox2
-            // 
-            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(401, 26);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(223, 27);
-            textBox2.TabIndex = 3;
             // 
             // Column1
             // 
@@ -224,11 +164,11 @@
             // 
             // Column5
             // 
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(255, 128, 128);
-            dataGridViewCellStyle3.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(255, 128, 128);
-            Column5.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(255, 128, 128);
+            dataGridViewCellStyle1.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(255, 128, 128);
+            Column5.DefaultCellStyle = dataGridViewCellStyle1;
             Column5.FlatStyle = FlatStyle.Flat;
             Column5.HeaderText = "";
             Column5.MinimumWidth = 6;
@@ -239,11 +179,11 @@
             // 
             // Column6
             // 
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(192, 255, 255);
-            dataGridViewCellStyle4.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(192, 255, 255);
-            Column6.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(192, 255, 255);
+            dataGridViewCellStyle2.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(192, 255, 255);
+            Column6.DefaultCellStyle = dataGridViewCellStyle2;
             Column6.FlatStyle = FlatStyle.Flat;
             Column6.HeaderText = "";
             Column6.MinimumWidth = 6;
@@ -251,6 +191,39 @@
             Column6.ReadOnly = true;
             Column6.Text = "Delete";
             Column6.UseColumnTextForButtonValue = true;
+            //
+            // 
+            // addBtn
+            // 
+            addBtn.BackColor = Color.LightSteelBlue;
+            addBtn.Font = new Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addBtn.Location = new Point(15, 15);
+            addBtn.Name = "addBtn";
+            addBtn.Size = new Size(105, 46);
+            addBtn.TabIndex = 0;
+            addBtn.Text = "New";
+            addBtn.UseVisualStyleBackColor = false;
+            addBtn.Click += addBtn_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = SystemColors.ActiveCaption;
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(800, 105);
+            panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(358, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(83, 26);
+            label1.TabIndex = 0;
+            label1.Text = "CLIENT";
             // 
             // Client
             // 
@@ -263,11 +236,10 @@
             Text = "Client";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -275,8 +247,6 @@
 
         private Panel panel2;
         private DataGridView dataGridView1;
-        private PictureBox pictureBox1;
-        private TextBox textBox1;
         private Button addBtn;
         private Panel panel1;
         private Label label1;

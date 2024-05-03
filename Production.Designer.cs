@@ -1,6 +1,6 @@
 ﻿namespace QuietAttic
 {
-    partial class Form1
+    partial class Production
     {
         /// <summary>
         ///  Required designer variable.

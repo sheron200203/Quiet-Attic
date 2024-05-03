@@ -1,8 +1,8 @@
 namespace QuietAttic
 {
-    public partial class Form1 : Form
+    public partial class Production : Form
     {
-        public Form1()
+        public Production()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace QuietAttic
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Production form = new Production();
+            AddProduction form = new AddProduction();
             form.ShowDialog();
         }
     }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuietAttic
 {
-    public partial class Production : Form
+    public partial class AddProduction : Form
     {
-        public Production()
+        public AddProduction()
         {
             InitializeComponent();
         }

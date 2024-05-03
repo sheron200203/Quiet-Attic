@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuietAttic
 {
-    public partial class StaffTypecs : Form
+    public partial class StaffType : Form
     {
-        public StaffTypecs()
+        public StaffType()
         {
             InitializeComponent();
         }

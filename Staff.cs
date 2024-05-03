@@ -16,5 +16,11 @@ namespace QuietAttic
         {
             InitializeComponent();
         }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            AddStaff form = new AddStaff();
+            form.ShowDialog();
+        }
     }
 }
